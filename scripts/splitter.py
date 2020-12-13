@@ -61,7 +61,7 @@ for root, subdirs, files in os.walk(root_dir):
         all_files_img = []
         
         for f in files:
-            if f.split(".")[-1] in ["png", "jpg", "jpeg"]:
+            if f.split(".")[-1] in ["png", "jpg", "jpeg","tif"]:
                 all_files_img.append(os.path.join(root,f))
             if f.split(".")[-1] in ["xml"]:
                 all_files_xml.append(os.path.join(root,f))
